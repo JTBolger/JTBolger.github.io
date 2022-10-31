@@ -3,27 +3,28 @@
     <head>
         <meta charset="utf-8" />
         <title>JT Bolger</title>
-        <link href="styles/home.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link href="styles/about.css" rel="stylesheet" />
     </head>
     <body>
         <div class="area" >
-                <ul class="circles">
-                    <li>CSS</li>
-                    <li></li>
-                    <li></li>
-                    <li>text</li>
-                    <li></li>
-                    <li>text</li>
-                    <li>text</li>
-                    <li></li>
-                    <li></li>
-                    <li><p>Frontend Developer</p></li>
-                </ul>
-        </div >
-        <div class="intro">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    </div >
+        <div class="title">
             <div id="transitionFG">
                 <div id="PageTitle">
-                    <h1>Welcome</h1>
+                    <h1>About</h1>
                 </div>
             </div>
         </div>
@@ -39,9 +40,10 @@
         </div>
 
         <div class="main">
-            <div id="title">
-                <h1 class="name">JT Bolger</h1>
-                <div class="links">
+            <div id="body">
+                <div id="bottom-arrow"><a onclick="openLinks()"><i class="fa-solid fa-arrow-down"></i></a></div>
+                <div id="links-border"></div>
+                <div id="links-container">
                     <a href="https://www.instagram.com/jt.bolger/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://github.com/JTBolger" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:jtjb1205@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
@@ -52,10 +54,14 @@
         <script src="scripts/transition.js"></script>
         <script src="scripts/menu.js"></script>
         <script>
-            function loadTitle() {
-                document.getElementById("title").style.translate = "0px -20%"
+            function openLinks() {
+                document.getElementById("body").style.height = "70%"
+                document.getElementById("bottom-arrow").style.opacity = "0"
+                document.getElementById("bottom-arrow").style.cursor = "default"
+                document.getElementById("links-border").style.width = "98%"
+                document.getElementById("links-container").style.opacity = "1"
+                document.getElementById("links-container").style.zIndex = 4;
             }
-            setTimeout(loadTitle, 700);
         </script>
         <script src="https://kit.fontawesome.com/3fc9433eba.js" crossorigin="anonymous"></script>
     </body>
