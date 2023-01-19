@@ -112,7 +112,7 @@ body {
     margin-bottom: 1%;
 }
 .project {
-    width: 95%;
+    width: 45%;
     height: 15rem;
     background-color: white;
     margin-top: 2%;
@@ -129,13 +129,15 @@ body {
 }
 .image-frame {
     width: 25%;
-    height: 100%;
-    background-color: #516175;
+    height: 70%;
+    /* background-color: #516175; */
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 0px #51617533;
+    /* box-shadow: 5px 5px 5px 0px #51617533; */
+    padding: 1%;
+    margin-top: 4%;
 }
 .description {
-    width: 50rem;
+    width: 40rem;
     height: 100%;
     margin-left: 1%;
     border-width: 0px 1px 0px 0px;
@@ -154,17 +156,36 @@ body {
     margin-top: -0.25%;
     font-size: 45px;
     margin-bottom: 1%;
-    font-weight: 1000;
     letter-spacing: 5px;
+    margin-left: -25%;
 }
 .project-links {
-    width: 13rem;
+    width: 6.5rem;
     height: 100%;
     margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    color: #516175;
+    font-size: 1rem;
+    align-items: center;
+    padding-top: 1%;
 }
-.project-links-title {
-    width: 100%;
-    height: fit-content;
+.project-links a {
+    height: 50px;
+    color: #5a728f;
+    text-shadow: 1px 1px #34425575;
+    font-size: 2.5rem;
+    transition: 0.4s;
+    margin-top: 2%;
+}
+.project-links a:hover {
+    transform: scale(1.1);
+}
+.project-links a:visited {
+    color: #5a728f;
+}
+.project-links a:link {
+    color: #5a728f;
 }
 .project-links-title h1 {
     text-align: center;
@@ -176,6 +197,143 @@ body {
     margin-bottom: 1%;
     font-weight: 1000;
     letter-spacing: 5px;
+}
+
+/* Languages Graph */
+.graph {
+    width: 45%;
+    height: 55%;
+    position: absolute;
+    background-color: white;
+    margin-left: 49%;
+    margin-top: 8%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    padding: 1%;
+    z-index: 1;
+}
+.graph-content {
+    width: 100%;
+    height: 75%;
+    background-color: #3e4a58;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.graph-lines:nth-child(1) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcc;
+    margin-top: 38%;
+    position: absolute;
+    color: #dce9fb;
+    font-family: 'roboto';
+    font-weight: bold;
+    z-index: 3;
+}
+.graph-lines:nth-child(2) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 29.75%;
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+.graph-lines:nth-child(3) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 21.5%;
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+.graph-lines:nth-child(4) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 13.25%;
+    position: absolute;
+    color: white;
+    z-index: 3;
+}
+.graph-lines:nth-child(5) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 5%;
+    position: absolute;
+    color: #dce9fb;
+    font-family: 'roboto';
+    z-index: 3;
+}
+.bar a {
+    padding-left: 125%;
+}
+.bar {
+    width: 10px;
+    height: 10000%;
+    background-color: white;
+    position: absolute;
+    /* margin-top: 30.7%; */
+    /* margin-left: 15%; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: 4;
+}
+
+.options {
+    position: absolute;
+    width: 35%;
+    height: 16%;
+    background-color: #516175;
+    color: white;
+    bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #51617533;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-family: "arial black";
+    text-shadow: 3px 3px #34425575;
+}
+.options:hover {
+    background-color: #3e4a58
+}
+.options-content {
+    display: none;
+    position: absolute;
+    background-color: #b5bfcc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%;
+    font-family: "roboto";
+    text-shadow: 1px 1px #34425575;
+}
+.options-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    border-style: none none solid none;
+    border-width: 1px;
+    cursor: pointer;
+}
+.options-content a:hover {
+    background-color: #98a1ac;
+}
+.show {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');

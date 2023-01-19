@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <title>JT Bolger</title>
         <link href="styles/projects.css" rel="stylesheet" />
+        <link rel="icon" href="images/website-icon.png">
     </head>
     <body>
         <div class="area" >
@@ -40,7 +41,20 @@
 
         <div class="main">
             <h1 class="title">PROJECTS</h1>
+
             <div class="project-body">
+                <div class="project">
+                    <img class="image-frame" src="images/website-icon.png" alt=""/>
+                    <div class="description">
+                        <div class="description-title">
+                            <h1>My Portfolio</h1>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JTBolger/MyPortfolio" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+
                 <div class="project">
                     <img class="image-frame" src="images/afterhours-logo.png" alt=""/>
                     <div class="description">
@@ -49,9 +63,21 @@
                         </div>
                     </div>
                     <div class="project-links">
-                        <div class="project-links-title">
-                            <h1>Links</h1>
+                        <a href="https://github.com/Tarleton-Computer-Society/afterhours" target="_blank"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <img class="image-frame" src="images/rocket-club-logo.png" alt=""/>
+                    <div class="description">
+                        <div class="description-title">
+                            <h1>Tarleton Rocket Club</h1>
                         </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/teddyoweh/Tarleton-Rocket-Team-Website" target="_blank"><i class="fa-solid fa-code"></i></a>
+                        <a href="https://www.instagram.com/tarletonrocketclub/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/trc_rocket_club" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="project">
@@ -63,33 +89,39 @@
                     </div>
                     <div class="project-links">
                         <div class="project-links-title">
-                            <h1>Links</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="image-frame"></div>
-                    <div class="description">
-                        <div class="description-title">
                             <h1> </h1>
                         </div>
                     </div>
-                    <div class="project-links">
-                        <div class="project-links-title">
-                            <h1>Links</h1>
-                        </div>
-                    </div>
                 </div>
-                <div class="project">
-                    <div class="image-frame"></div>
-                    <div class="description">
-                        <div class="description-title">
-                            <h1> </h1>
-                        </div>
+            </div>
+            <div class="graph">
+                <div class="graph-content">
+                    <div class="graph-lines">
+                        0%
+                        <a style="margin-left: 9%;">HTML</a>
+                        <a style="margin-left: 8%;">CSS</a>
+                        <a style="margin-left: 7%;">JavaScript</a>
+                        <a style="margin-left: 4%;">Python</a>
+                        <a style="margin-left: 9.75%;">C</a>
+                        <a style="margin-left: 10.5%;">Java</a>
+                        <div id="bar1" class="bar" style="margin-left: 15%;"><a id="bar1Text"></a></div>
+                        <div id="bar2" class="bar" style="margin-left: 30%;"><a id="bar2Text"></a></div>
+                        <div id="bar3" class="bar" style="margin-left: 45%;"><a id="bar3Text"></a></div>
+                        <div id="bar4" class="bar" style="margin-left: 60%;"><a id="bar4Text"></a></div>
+                        <div id="bar5" class="bar" style="margin-left: 75%;"><a id="bar5Text"></a></div>
+                        <div id="bar6" class="bar" style="margin-left: 90%;"><a id="bar6Text"></a></div>
                     </div>
-                    <div class="project-links">
-                        <div class="project-links-title">
-                            <h1>Links</h1>
+                    <div class="graph-lines"></div>
+                    <div class="graph-lines"></div>
+                    <div class="graph-lines"></div>
+                    <div class="graph-lines">100%</div>
+                    
+                    <div class="options" onclick="menu()">
+                        Select Project
+                        <div id="myDropdown" class="options-content">
+                            <a onclick="portfolioGraph()">My Portfolio</a>
+                            <a onclick="afterhoursGraph()">Afterhours</a>
+                            <a onclick="rocketclubGraph()">Rocket Club</a>
                         </div>
                     </div>
                 </div>
@@ -97,5 +129,7 @@
         </div>
         <script src="scripts/transition.js"></script>
         <script src="scripts/menu.js"></script>
+        <script src="scripts/graph.js"></script>
+        <script src="https://kit.fontawesome.com/3fc9433eba.js" crossorigin="anonymous"></script>
     </body>
 </html>
